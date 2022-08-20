@@ -1,2 +1,2 @@
-#README
-##gitのTest
+# README
+## gitのTest
