@@ -1,0 +1,85 @@
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/style.scss ***!
+  \**************************************************************************************************************/
+body {
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: #FFF;
+  z-index: 1001;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+.header :first-child {
+  top: 50%;
+  font-size: 100%;
+  text-align: center;
+  flex-basis: 10%;
+  display: grid;
+  align-items: center;
+}
+.header .header-title {
+  font-size: 20px;
+  margin: auto;
+  display: grid;
+  align-items: center;
+}
+.header :last-child {
+  flex-basis: 10%;
+}
+
+.content {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-list .card {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  height: 100px;
+  width: auto;
+  max-width: 500px;
+  background-color: beige;
+  position: relative;
+}
+.card-list .card .card-img {
+  border-radius: 50%;
+  top: 50%;
+  flex-basis: 20%;
+  display: grid;
+  align-items: center;
+}
+.card-list .card .card-img img {
+  border-radius: 50%;
+  width: 70px;
+  margin: 10px;
+  margin-left: 20px;
+}
+.card-list .card .card-contents {
+  margin: 5px 20px;
+  flex-grow: 100px;
+  flex-basis: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card-list .card .card-contents .card-name {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  display: grid;
+  align-items: center;
+}
+.card-list .card .card-contents .card-job {
+  opacity: 0.5;
+  font-size: 15%;
+}
+.card-list .card .card-contents .card-comment {
+  flex-basis: 100%;
+  font-size: 10px;
+  overflow-wrap: break-word;
+}
