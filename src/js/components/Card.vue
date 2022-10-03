@@ -27,7 +27,7 @@ export default {
         },  
         img: {
             type: String,
-            default: "/src/images/azarasi.png",
+            default: "",
         },
         comment: {
             type: String,
