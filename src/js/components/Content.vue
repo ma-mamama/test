@@ -10,25 +10,25 @@ const userData = [
     {
         name: "まままま",
         job: "エンジニア",
-        img: "/src/images/azarasi.png",
+        img: "../../../resource/images/azarasi.png",
         comment: "よろしくお願いします"
     },
     {
         name: "よしきん",
         job: "エンジニア",
-        img: "/src/images/tori.png",
+        img: "../../../resource/images/tori.png",
         comment: "あああああああああああああああああああああああ"
     },
     {
         name: "カッさー",
         job: "エンジニア",
-        img: "/src/images/washi.png",
+        img: "../../../resource/images/washi.png",
         comment: "コメント"
     },
     {
         name: "G2",
         job: "エンジニア",
-        img: "/src/images/buta.png",
+        img: "../../../resource/images/buta.png",
         comment: "コメント"
     }
 ];

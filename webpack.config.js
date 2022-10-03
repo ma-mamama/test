@@ -13,7 +13,6 @@ module.exports = {
         './components/CardList': './src/js/components/CardList.vue',
         './components/Card': './src/js/components/Card.vue',
         'index.css': './src/scss/style.scss',
-        '/images': '/src/images'
     },  
     output: {
         //出力するファイル名
