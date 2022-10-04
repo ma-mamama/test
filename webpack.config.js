@@ -1,23 +1,24 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const FixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
 	mode: 'development',
 	entry: {
         'index': './src/js/index.js',
-        './components/App': './src/js/components/App.vue',
-        './components/Header': './src/js/components/Header.vue',
-        './components/Content': './src/js/components/Content.vue',
-        './components/CardList': './src/js/components/CardList.vue',
-        './components/Card': './src/js/components/Card.vue',
-        'index.css': './src/scss/style.scss',
+        'components/App': './src/js/components/App.vue',
+        'components/Header': './src/js/components/Header.vue',
+        'components/Content': './src/js/components/Content.vue',
+        'components/CardList': './src/js/components/CardList.vue',
+        'components/Card': './src/js/components/Card.vue',
+        './index.css': './src/scss/style.scss',
     },  
     output: {
         //出力するファイル名
         filename: 'js/[name].js',
-        path: path.resolve(__dirname, 'public/')
+        path: path.resolve(__dirname, 'dist/')
     },
 	module: {
 		rules: [
@@ -28,9 +29,12 @@ module.exports = {
                         loader: 'file-loader',
                         options: {
                             //nameは画像名、extは拡張子
-                            name: 'images/[name].[ext]',
-                            outputPath: 'images', //出力先
-                            PublicPath: './images' //htmlから読み込まれる
+                            // name: '[name].[ext]',
+                            // outputPath: 'images/', //出力先
+                            // PublicPath: function(path){
+                            //     return '../' + path;
+                            // }
+                            name: 'dirname/[contenthash].[ext]'
                         }
                     },
                 ]
@@ -48,7 +52,7 @@ module.exports = {
                         loader: "css-loader",
                     },
                     {
-					    loader: 'sass-loader',
+					    loader: "sass-loader",
                     }
 				],
 			},
@@ -73,5 +77,9 @@ module.exports = {
 		}),
 		new FixStyleOnlyEntriesPlugin(),
         new VueLoaderPlugin(),
+        new HtmlWebpackPlugin({
+            template: 'src/index.html',
+            filename: 'index.html'
+        })
 	],
 };
