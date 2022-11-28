@@ -16,7 +16,3 @@ npm run build
 ```bash
 npm run watch
 ```
-
-## リバートテスト
-
-## リバート後のテスト
