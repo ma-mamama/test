@@ -16,3 +16,5 @@ npm run build
 ```bash
 npm run watch
 ```
+
+マージコミット打ち消し後のコミット
