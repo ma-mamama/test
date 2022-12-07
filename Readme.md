@@ -21,3 +21,5 @@ npm run watch
 ## git stash後のテスト
 
 スタッシュ後のtest
+
+## git revertのテスト
