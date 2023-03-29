@@ -16,6 +16,3 @@ npm run build
 ```bash
 npm run watch
 ```
-
-
-## git rebaseで離れたコミットをまとめれるかテスト
