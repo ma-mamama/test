@@ -16,11 +16,3 @@ npm run build
 ```bash
 npm run watch
 ```
-
-マージコミット打ち消し後のコミット
-## git stash後のテスト
-
-スタッシュ後のtest
-
-## マージ後のコミット
-テスト
